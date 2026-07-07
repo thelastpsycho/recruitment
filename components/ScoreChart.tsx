@@ -14,7 +14,7 @@ export function ScoreChart({ data }: ScoreChartProps) {
         <XAxis dataKey="range" />
         <YAxis />
         <Tooltip />
-        <Bar dataKey="count" fill="#6366f1" />
+        <Bar dataKey="count" fill="#d4a574" />
       </BarChart>
     </ResponsiveContainer>
   );

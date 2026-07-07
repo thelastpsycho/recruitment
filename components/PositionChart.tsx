@@ -17,7 +17,7 @@ export function PositionChart({ data }: PositionChartProps) {
         <XAxis type="number" />
         <YAxis dataKey="position" type="category" width={150} />
         <Tooltip />
-        <Bar dataKey="count" fill="#10b981" />
+        <Bar dataKey="count" fill="#3d5a80" />
       </BarChart>
     </ResponsiveContainer>
   );

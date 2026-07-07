@@ -18,8 +18,25 @@ const config: Config = {
         sand: "#faf8f5",
       },
       fontFamily: {
-        sans: ["Outfit", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
+        sans: ["var(--font-nunito)", "system-ui", "sans-serif"],
+      },
+      animation: {
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        "slide-up": "slideUp 0.6s ease-out forwards",
+        "pulse-delay-1000": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite 1s",
+      },
+      animationDelay: {
+        1000: "1000ms",
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        slideUp: {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },
